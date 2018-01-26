@@ -31,3 +31,6 @@ http POST :3000/todos/1/items name='Listen to Don Giovanni' Accept:'application/
 
 ### retrieve all todos with version
 http :3000/todos Accept:'application/vnd.todos.v1+json' Authorization:'auth_token'
+
+### retrieve specific page of results
+http :3000/todos page==2 Accept:'application/vnd.todos.v1+json' Authorization:'auth_token'
